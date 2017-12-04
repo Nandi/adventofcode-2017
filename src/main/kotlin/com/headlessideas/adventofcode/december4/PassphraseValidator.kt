@@ -7,7 +7,7 @@ fun validate(passphrases: List<List<String>>) {
     println(passphrases.filter { it.noAnagrams() }.size)
 }
 
-fun <T> List<T>.isDistinct(): Boolean = toSet().size == size
+fun List<String>.isDistinct(): Boolean = distinct().size == size
 
 fun List<String>.noAnagrams(): Boolean = distinctBy { it.toCharArray().sorted() }.size == size
 
