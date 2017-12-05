@@ -24,8 +24,8 @@ fun main(args: Array<String>) {
         it + 1
     })
     println(readInstructions(i.toMutableList()) {
-        when (it) {
-            3 -> it-1
+        when {
+            it >= 3 -> it-1
             else -> it+1
         }
     })
