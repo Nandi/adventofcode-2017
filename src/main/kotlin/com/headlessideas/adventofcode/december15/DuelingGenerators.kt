@@ -13,7 +13,7 @@ fun judge(genA: Generator, genB: Generator, iterations: Int) {
 }
 
 fun main(args: Array<String>) {
-    //judge(Generator(722, 16807), Generator(354, 48271), 40_000_000)
+    judge(Generator(722, 16807), Generator(354, 48271), 40_000_000)
     judge(Generator(722, 16807, 4), Generator(354, 48271, 8), 5_000_000)
 }
 
